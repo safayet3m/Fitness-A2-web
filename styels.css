@@ -209,6 +209,83 @@ nav {
   color: rgba(255, 255, 255, 0.50);
 }
 
+/* run section */
+.run-contraner {
+  display: flex;
+  color: #FFF;
+  margin: 100px 0px 100px 0px;
+  padding: 30px 32px 29px 54px;
+  align-items: center;
+  gap: 165px;
+  align-self: stretch;
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+}
+
+.run-section-left {
+  width: 50%;
+}
+
+.run-section-left>h3 {
+  font-size: 48px;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.run-section-left>p {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.50);
+  margin-top: 10px;
+  margin-bottom: 34px;
+}
+
+.run-section-left>button {
+  display: flex;
+  width: 224px;
+  padding: 16px 40px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 42px;
+  background: #E6533C;
+  color: #FFF;
+  border: none;
+}
+
+.run-section-right {
+  width: 50%;
+}
+
+.run-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+}
+
+/* BMI SECTION */
+.bmi-title {
+  text-align: center;
+}
+
+.bmi-title>h3 {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.bmi-title>p {
+  color: rgba(255, 255, 255, 0.50);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
 /* media quary */
 @media screen and (max-width:576px) {
   nav {
@@ -244,9 +321,21 @@ nav {
     top: 120px
   }
 
- .img-contrainer{
-  flex-direction: column;
-  text-align: center;
- }
+  .img-contrainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .run-contraner {
+    flex-direction: column;
+    gap: 50px;
+    padding: 30px 33px 35px 30px;
+    border: 2px solid red;
+  }
+
+  .run-section-left>h3 {
+    font-size: 32px;
+    font-weight: 900;
+  }
 
 }
