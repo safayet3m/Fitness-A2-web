@@ -52,6 +52,11 @@ nav {
   margin-bottom: 28px;
 }
 
+.span {
+  font-style: italic;
+  font-weight: 100;
+}
+
 .banner-hedding {
   width: 60%;
 }
@@ -63,7 +68,8 @@ nav {
   margin-top: 0px;
   margin-bottom: 28px;
 }
-.btn{
+
+.btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -107,18 +113,21 @@ nav {
   top: 70px;
   left: 200px;
 }
-.blur-top>h1{
+
+.blur-top>h1 {
   margin-bottom: 0px;
 }
-.blur-top>p{
+
+.blur-top>p {
   margin-top: 0px;
 }
-.btn-down{
+
+.btn-down {
   display: flex;
   align-items: center;
   gap: 20px;
   border-radius: 12px;
-  backdrop-filter:blur(10px) ;
+  backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.10);
   background: rgba(255, 255, 255, 0.10);
   backdrop-filter: blur(10px);
@@ -129,15 +138,115 @@ nav {
   right: 0%;
   left: -100px;
 }
-.blur-color{
+
+.blur-color {
   width: 40px;
   height: 20px;
   background-color: #E6533C;
   border-radius: 63%;
 }
-.blur-botom>h3{
+
+.blur-botom>h3 {
   margin-bottom: 0px;
 }
-.blur-botom>p{
-  margin-top:0px ;
+
+.blur-botom>p {
+  margin-top: 0px;
+}
+
+/* habit section */
+.title-container {
+  text-align: center;
+  color: #FFF;
+}
+
+.habit-titel {
+  margin: 100px 0px 15px 0px;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.title-descrption {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.50);
+  margin-bottom: 55px;
+}
+
+.img-contrainer {
+  display: flex;
+  gap: 35px;
+  color: #FFF;
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+  border-radius: 50%;
+}
+
+.Movement,
+.Time,
+.Practice,
+.Weight-Loss {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.Movement-dec,
+.Time-dec,
+.Practice-dec,
+.Weight-Loss-dec {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: rgba(255, 255, 255, 0.50);
+}
+
+/* media quary */
+@media screen and (max-width:576px) {
+  nav {
+    flex-direction: column;
+  }
+
+  body {
+    padding: 2px 10px;
+  }
+
+  .banner-container {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .banner-hedding {
+    width: 100%;
+  }
+
+  .banner-img {
+    width: 340px;
+    height: 550px;
+    background-size: cover;
+    padding: 10px;
+    background-position: center;
+  }
+
+  .btn-down {
+    left: 15px;
+  }
+
+  .blur-top {
+    top: 120px
+  }
+
+ .img-contrainer{
+  flex-direction: column;
+  text-align: center;
+ }
+
 }
