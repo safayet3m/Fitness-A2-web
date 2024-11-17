@@ -43,6 +43,7 @@ nav {
   color: #fff;
   display: flex;
   gap: 80px;
+
 }
 
 .banner-hedding>h1 {
@@ -104,9 +105,9 @@ nav {
 
 .blur-top {
   border-radius: 12px;
+  backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.10);
   background: rgba(255, 255, 255, 0.10);
-  backdrop-filter: blur(10px);
   width: 160px;
   padding: 5px 20px;
   position: absolute;
@@ -130,7 +131,6 @@ nav {
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.10);
   background: rgba(255, 255, 255, 0.10);
-  backdrop-filter: blur(10px);
   padding: 5px 20px;
   width: 180px;
   position: absolute;
@@ -221,6 +221,7 @@ nav {
   background: rgba(255, 255, 255, 0.10);
   backdrop-filter: blur(10px);
   border-radius: 12px;
+
 }
 
 .run-section-left {
@@ -286,6 +287,45 @@ nav {
   margin-top: 0px;
 }
 
+/* table section */
+.padding {
+  background-color: #222;
+  padding: 50px;
+  margin-top: 60px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Calculate-BMI-titel>h3 {
+  font-size: 28px;
+  font-weight: 900;
+  color: #FFF;
+}
+
+.Calculate-BMI-titel>p {
+  color: rgba(255, 255, 255, 0.50);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.table-title {
+  font-size: 28px;
+  font-weight: 900;
+  color: #FFF;
+}
+
+th,
+td {
+  border: .5px solid darkgray;
+  color: rgba(255, 255, 255, 0.50);
+  padding: 10px 20px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
 /* media quary */
 @media screen and (max-width:576px) {
   nav {
@@ -330,12 +370,18 @@ nav {
     flex-direction: column;
     gap: 50px;
     padding: 30px 33px 35px 30px;
-    border: 2px solid red;
+
   }
 
   .run-section-left>h3 {
     font-size: 32px;
     font-weight: 900;
+  }
+  .padding{
+    flex-direction: column;
+  }
+  #input{
+    width: auto;
   }
 
 }
