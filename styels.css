@@ -402,6 +402,7 @@ footer {
   margin-top: 150px;
   background: rgba(255, 255, 255, 0.10);
   padding: 30px;
+  border-radius: 8px;
 }
 
 .footer-tital>h1 {
@@ -425,15 +426,25 @@ footer {
   font-weight: 700;
   padding-bottom: 40px;
 }
-
+.footer-start-ancor{
+  list-style: none;
+  margin-bottom: 20px;
+}
 .footer-start-ancor>li>a {
   text-decoration: none;
-  color: #E6533C;
+  color: #FFFFFF80;
 }
 
 .footer-continar {
   display: flex;
   justify-content: space-between;
+}
+.footer-des{
+  color: rgba(255, 255, 255, 0.50);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 8px;
 }
 
 /* media quary */
