@@ -326,6 +326,116 @@ table {
   border-collapse: collapse;
 }
 
+.bmi-btn {
+  display: flex;
+  width: 224px;
+  padding: 16px 40px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 42px;
+  background: #E6533C;
+  border: none;
+  color: #FFF;
+  margin-top: 30px;
+}
+
+/* Our team section */
+.our-team-section {
+  margin-top: 80px;
+  text-align: center;
+  color: #FFF;
+}
+
+.our-team-section>h3 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 0px;
+}
+
+.our-team-section>p {
+  color: rgba(255, 255, 255, 0.50);
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.pic {
+  position: relative;
+  display: inline-block;
+}
+
+.pic-head {
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.pic-des {
+  position: absolute;
+  top: 150px;
+  left: 20px;
+  color: rgba(255, 255, 255, 0.50);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.grid-pic-continar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+
+.pic>img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  align-self: stretch;
+}
+
+/* footer section */
+footer {
+  margin-top: 150px;
+  background: rgba(255, 255, 255, 0.10);
+  padding: 30px;
+}
+
+.footer-tital>h1 {
+  font-style: italic;
+  font-size: 70px;
+  font-weight: 800;
+  color: #E6533C;
+  margin-bottom: 0px;
+}
+
+.footer-tital>p {
+  color: rgba(255, 255, 255, 0.50);
+  font-size: 14px;
+  font-weight: 400;
+
+}
+
+.footer-start>h3 {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 700;
+  padding-bottom: 40px;
+}
+
+.footer-start-ancor>li>a {
+  text-decoration: none;
+  color: #E6533C;
+}
+
+.footer-continar {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* media quary */
 @media screen and (max-width:576px) {
   nav {
@@ -377,11 +487,50 @@ table {
     font-size: 32px;
     font-weight: 900;
   }
-  .padding{
+
+  .padding {
     flex-direction: column;
   }
-  #input{
+
+  #input {
     width: auto;
   }
 
+  .grid-pic-continar {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer-continar {
+    flex-direction: column;
+  }
+
+  .footer-start>h3 {
+    padding: 20px;
+  }
+  footer{
+    margin-top: 100px;
+  }
+  .pic {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .pic-head {
+    position: absolute;
+    top: 300px;
+    left: 80px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 900;
+  }
+  
+  .pic-des {
+    position: absolute;
+    top: 350px;
+    left: 80px;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+  }
 }
